@@ -1,0 +1,260 @@
+/* ZIGGY BOOTSTRAP by Jose Erlino M. Lontok - http://jelontok.com */
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+h1,h2,h3 {
+    margin-bottom: 30px;
+}
+
+/* header */
+#header-main {
+    background-color: #a3080e;
+    color: #fff;
+    min-height: 100px;
+}
+
+#header-main-logo {
+    margin:0;
+    line-height: 100px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#header-main-logo span {
+    font-weight: 300;
+}
+
+#header-main-logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#header-main .contact {
+    line-height: 100px;
+    font-size: 18px;
+}
+
+#header-main .contact .fa-envelope {
+    margin-left: 20px;
+}
+
+#header-main .contact a {
+    color: #fff;
+}
+
+/* nav */
+#nav-main {
+    margin:0;
+    border-radius:0;
+}
+
+#nav-main button.btn {
+    background-color: #B82228 !important;
+    color: #fff;    
+}
+
+/* splash - carousel */
+#splash-section {
+    height: 400px;
+}
+
+#splash-section .splash-item {
+    width: 100% !important;
+    height: 400px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-align: center;
+    color: #fff;
+}
+
+#splash-section .splash-item .text {
+    padding-top: 120px;
+    position: relative;
+    z-index: 20;
+    display: none;
+    animation-delay: .5s;
+}
+
+#splash-section .splash-item .text h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+#splash-section .splash-item:before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    left: 0;
+}
+
+
+/* content */
+.content-sidebar, .full-content {
+    padding: 30px 0 40px 0;
+}
+
+.featured-content {
+    background-color: #f3f5f8;
+    padding: 30px 0;
+}
+
+.featured-content .card {    
+    background-size: 180%;    
+    background-position: bottom;
+    height: 250px;
+    margin-bottom: 20px;
+    transition: background-size 1s ease-in;
+    -moz-transition: background-size 1s ease-in;
+    -ms-transition: background-size 1s ease-in;
+    -o-transition: background-size 1s ease-in;
+    -webkit-transition: background-size 1s ease-in;
+}
+
+.featured-content .card a {
+    display: block;
+    width: 100%;
+    line-height: 250px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.5;
+    text-decoration: none !important;
+    transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -webkit-transition: opacity 1s ease-in;    
+}
+
+.featured-content .card:hover {
+    background-size: 110%;
+}
+
+.featured-content .card:hover a {
+    opacity: 0.8;
+}
+
+
+/* subscribe */
+#subscribe-to-newsletter {
+    background-image: url(../img/city-streets-skyline-buildings.jpg);
+    background-position: bottom;
+    background-size: 120%;
+    padding: 50px 0 80px 0;
+    position: relative;
+    color: #fff;
+    transition: background-size 1s ease-in;
+    -moz-transition: background-size 1s ease-in;
+    -ms-transition: background-size 1s ease-in;
+    -o-transition: background-size 1s ease-in;
+    -webkit-transition: background-size 1s ease-in;    
+}
+
+#subscribe-to-newsletter:hover {
+    background-size: 100%;
+}
+
+#subscribe-to-newsletter:before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#subscribe-to-newsletter form {
+    z-index: 20;
+    position: relative;
+}
+
+#subscribe-to-newsletter form input[type="text"] {
+    height: 50px;
+}
+
+#subscribe-to-newsletter form button.btn {
+    background-color: #B82228 !important;
+    color: #fff;
+    height: 50px;
+}
+
+/* footer */
+#footer-main {
+    background-color: #B82228;
+    color: #DBA2A2;
+}
+
+#footer-main h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px #DBA2A2 solid;
+    color: #fff;
+}
+
+#footer-main ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#footer-main ul li a {
+    color: #DBA2A2;
+}
+
+#footer-links {
+    padding: 20px 0;
+}
+
+#footer-links .fa-phone {
+    margin-right: 8px;
+} 
+
+#footer-links .fa-envelope {
+    margin-right: 6px;
+}
+
+#footer-links .fa-map-marker {
+    margin-left: 2px;
+    margin-right: 10px;    
+}
+
+#footer-copyright {
+    text-align: center;
+    background-color: #a3080e;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 12px;
+}
+
+#footer-copyright p {
+    margin: 0;
+}
+
+#footer-copyright a {
+    color: #fff;
+}
+
+#footer-copyright span {
+    padding: 0 5px;
+}
+
+@media (min-width: 767px) {
+    #main-menu {padding-left: 0; padding-right: 0;}
+    #subscribe-to-newsletter form {width: 60%; margin: auto;}
+}
+
+@media (max-width: 767px) {
+    #header-main {min-height: inherit; padding: 30px 0;}
+    #header-main * {text-align: center !important; line-height: normal !important;}
+    #footer-links {text-align: center;}
+    .pull-left, .pull-right {float: none !important;}    
+}
